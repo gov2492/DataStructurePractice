@@ -50,7 +50,6 @@ public class Dll {
         while (temp != null) {
             System.out.println(temp.getData());
             temp = temp.getNext();
-            size++;
         }
     }
 
@@ -85,5 +84,15 @@ public class Dll {
             temp=current;
         }
         head = next;
+    }
+     public int getSize() {
+        int i=0;
+        Node temp=head;
+        while(temp!=null)
+        {
+            i++;
+            temp=temp.getNext();
+        }
+        return i;
     }
 }
