@@ -1,12 +1,20 @@
-package SingleLinkedList;
+package DoubleLinkedList;
 
 public class Node {
 
-    int data;
-    Node next;
+    private Node next;
+    private int data;
+    private Node previous;
 
     public Node(int data) {
         this.data = data;
+    }
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
     }
 
     public int getData() {
@@ -17,11 +25,11 @@ public class Node {
         this.data = data;
     }
 
-    public Node getNext() {
-        return next;
+    public Node getPrevious() {
+        return previous;
     }
 
-    public void setNext(Node next) {
-        this.next = next;
+    public void setPrevious(Node previous) {
+        this.previous = previous;
     }
 }
